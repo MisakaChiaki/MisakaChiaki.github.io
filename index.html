@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <link rel="icon" href="photo\fat.jpg">
+        <title>      
+        王懷逸
+        </title>
+        
+    </head>
+    <body onload=display_ct(); >
+        <audio src ="music\kokoro.mp3"    autoplay="autoplay" loop="loop"  preload="auto">
+            
+            <p>if you saw tis</p>
+        </audio>
+        <br>
+        <script type="text/javascript"> 
+            function display_c(){
+                var refresh=1000; // Refresh rate in milli seconds
+                mytime=setTimeout('display_ct()',refresh)
+            }
+            function display_ct() {
+                var today = new Date();
+                var date = (today.getMonth()+1)+ '-' +today.getDate()+'-'+ today.getFullYear();
+                var second =  today.getSeconds();
+                if(  second <=9){
+                    second = '0' +second
+                }
+                var minute =  today.getMinutes()
+                if(  minute <=9){
+                    minute = '0' +minute
+                }
+                var hour =  today.getHours()
+                if( hour  <=9){
+                    hour  = '0' +hour
+                }
+                var time = hour  + ":" + minute + ":" + second;
+                var output = date + ' '+ time
+                document.getElementById('ct').innerHTML = output;
+                display_c();
+            }
+         </script>
+
+        <span id='ct' ></span>
+         <!-- 
+         <bgsound src="C:\Users\hoc92\OneDrive\文件\code\hw\music\kokoro.mp3" autostart=true loop=infinite> 
+         -->
+        <h3 class="high_school">high school</h3>
+        <p> 
+            我的高中是
+            <a href = "https://www.hchs.hc.edu.tw/home">新竹高中  
+                <link href="style.css" rel="stylesheet" type="text/css">
+            </a>
+        </p>
+        
+        <br>
+        <h3 class="department">my department</h3>
+        <p> 
+            我的系所是
+            <a href = "https://web.ee.ntu.edu.tw/">  台大電機  </a>
+        </p>
+        <br>
+        
+        <h3 class="hobby">my hobby</h3>
+        <p> 1.看motogp，支持的車手為 
+            <a href = "https://twitter.com/valeyellow46">
+            VR46
+            </a> 
+        </p>
+        <img src = "photo\rossi.jpg" weight = "928 " height ="1000">
+        <br>
+
+        <p>2. 看動畫，老婆是七海千秋，最喜歡的漫畫是神槍少女與鋼之煉金術師
+            <br>
+            <a href = "https://ani.gamer.com.tw/" >
+                動畫瘋網址
+            </a>
+        </p>
+            
+        <img src = "photo\nanamichiaki.jpg" weight = "1000 " height ="707">
+        <br>
+        <p>3.另外還有<a href = "https://youtu.be/dQw4w9WgXcQ">神祕的興趣</a></p>
+       
+    </body>
+</html>
