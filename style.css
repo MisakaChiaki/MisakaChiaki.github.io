@@ -14,10 +14,6 @@ a :hover{
   color: #191970
 }
 
-body {
-  background-color: #F8E75C ;
- 
-  }
 .bio{
   width: 75% ;
   text-align : left;
@@ -25,5 +21,13 @@ body {
 }
 
 .biography{
-  color :#A6ACAF 
+  color :#A6ACAF ;
 }
+
+
+
+
+body {
+  background-color: #F8E75C ;
+ 
+  }
